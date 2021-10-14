@@ -1,0 +1,9 @@
+---
+
+- hosts: web
+  roles:
+    - default
+    - apache2
+  remote_user: root
+  vars_files:
+    - var.yaml
