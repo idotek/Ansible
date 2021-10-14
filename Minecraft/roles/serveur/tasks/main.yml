@@ -1,0 +1,12 @@
+---
+
+- name: Create serveur1 folder
+  file:
+    path: /home/server1
+    state: directory
+- name: Downloading spigot (Latest version)
+  get_url:
+    url: https://download.getbukkit.org/spigot/spigot-1.17.1.jar
+    dest: /home/server1
+
+

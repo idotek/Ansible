@@ -8,10 +8,17 @@
   vars_files:
     - var.yaml
 
-# - hosts: serveur
-#   roles:
-#     - default
-#     - server
-#   remote_user: root
-#   vars_files:
-#     - var.yaml
+- hosts: server
+  roles:
+    - default
+    - serveur
+  remote_user: root
+  vars_files:
+    - var.yaml
+  tasks:
+  - pause: 
+      seconds: 1
+      prompt: |
+        /////////////////
+        {{post_install}}
+        /////////////////  

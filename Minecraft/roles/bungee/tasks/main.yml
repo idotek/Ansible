@@ -10,3 +10,7 @@
     dest: /home/bungee/
 - name: Copy config.yaml
   template: src=../files/config.yml dest=/home/bungee
+# - name: Run Waterfall to generate files.
+#   shell: java -jar waterfall-1.17-451.jar
+#   args:
+#     chdir: /home/bungee/

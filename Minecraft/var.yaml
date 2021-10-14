@@ -1,0 +1,5 @@
+---
+post_install: |
+      Chose qui reste à faire:
+        - Crée un tmux pour votre serveur bungee et un autre tmux pour vos serveurs (Tmux -s nom)
+        - Lancer votre spigot/waterfall (java -jar )
