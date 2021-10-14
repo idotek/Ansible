@@ -1,0 +1,12 @@
+---
+
+- name: Create bungee folder
+  file:
+    path: /home/bungee
+    state: directory
+- name: Downloading Waterfall
+  get_url:
+    url: https://papermc.io/api/v2/projects/waterfall/versions/1.17/builds/451/downloads/waterfall-1.17-451.jar
+    dest: /home/bungee/
+- name: Copy config.yaml
+  template: src=../files/config.yml dest=/home/bungee

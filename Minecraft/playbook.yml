@@ -1,0 +1,17 @@
+---
+
+- hosts: bungee
+  roles:
+    - default
+    - bungee
+  remote_user: root
+  vars_files:
+    - var.yaml
+
+# - hosts: serveur
+#   roles:
+#     - default
+#     - server
+#   remote_user: root
+#   vars_files:
+#     - var.yaml

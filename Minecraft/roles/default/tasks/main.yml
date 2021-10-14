@@ -1,0 +1,17 @@
+---
+
+- name: UPDATE PACKAGE
+  apt:
+    update_cache: true
+    force_apt_get: true
+    upgrade: true
+- name: INSTALLING DEFAULT PACKAGE
+  apt:
+    pkg: 
+      - htop
+      - nload
+      - tmux
+      - net-tools
+      - vnstat
+      - openjdk-8-jre
+      - screen
