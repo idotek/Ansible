@@ -1,0 +1,16 @@
+---
+
+
+- name: Default Install
+  apt:
+    update_cache: true
+    force_apt_get: true
+    upgrade: true
+- name: default package
+  apt:
+    pkg: 
+      - htop
+      - nload
+      - tmux
+      - net-tools
+      - vnstat

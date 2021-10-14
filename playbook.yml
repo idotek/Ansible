@@ -1,0 +1,11 @@
+---
+
+
+- hosts: aws
+  roles:
+  - default
+  remote_user: root
+  vars_files:
+    - var.yaml
+#  vars:
+#    ansible_ssh_private_key_file: "{{key_ido}}"
