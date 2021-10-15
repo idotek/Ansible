@@ -54,7 +54,7 @@
     recurse: yes
     owner: www-data
     group: www-data
-    
+
 - name: Add crontab for scheduler
   cron:
     job: cd /var/www/azuriom && php artisan schedule:run >> /dev/null 2>&1

@@ -1,0 +1,18 @@
+---
+
+- name: Création d'une VM
+  community.general.proxmox_kvm:
+    api_user: "{{proxmox_user}}"
+    api_password: "{{proxmox_password}}"
+    api_host: "{{proxmox_ip}}"
+    name: ansible
+    node: 
+    vmid: 101
+    cores: 2
+    vcpus: 2
+    memory: 2048
+    net:
+      net0: "virtio,bridge=vmbr0"
+    virtio:
+      virtio0: 'local:20,format=qcow2'
+    kvm: yes

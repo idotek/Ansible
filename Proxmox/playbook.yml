@@ -1,0 +1,7 @@
+---
+
+- hosts: pve1
+  roles:
+    - creation
+  vars_files:
+    - var.yml

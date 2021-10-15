@@ -4,6 +4,7 @@
   roles:
     - default
     - apache2
+    - mysql
   remote_user: root
   vars_files:
     - var.yaml

@@ -1,0 +1,5 @@
+---
+
+proxmox_user: root@pam
+proxmox_password: 
+proxmox_ip: 

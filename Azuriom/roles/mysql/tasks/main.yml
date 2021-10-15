@@ -1,0 +1,26 @@
+---
+
+- name: Installing mysql package
+  apt:
+    pkg:
+      - mysql-client
+      - mysql-server
+      
+- name: pip package
+  pip:
+    name: pymysql
+
+
+- name: Creating database
+  community.mysql.mysql_db:
+    name: "{{ db_name }}"
+    state: present
+
+- name: New mysql user
+  community.mysql.mysql_user:
+    name: "{{ db_username }}"
+    password: "{{ db_password }}"
+    priv: '{{db_name}}.*:ALL,GRANT'
+    state: present
+
+    

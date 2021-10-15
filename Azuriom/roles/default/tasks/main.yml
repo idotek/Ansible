@@ -19,3 +19,4 @@
       - lsb-release 
       - apt-transport-https 
       - ca-certificates
+      - python3-pip
