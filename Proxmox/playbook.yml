@@ -3,5 +3,6 @@
 - hosts: pve1
   roles:
     - creation
+    - lancement
   vars_files:
     - var.yml

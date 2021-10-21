@@ -1,0 +1,10 @@
+---
+
+- name: Start VM
+  community.general.proxmox_kvm:
+    api_user: "{{proxmox_user}}"
+    api_password: "{{proxmox_password}}"
+    api_host: "{{proxmox_ip}}"
+    name: ansible
+    node: "{{proxmox_node}}"
+    state: started

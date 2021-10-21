@@ -3,3 +3,6 @@
 proxmox_user: root@pam
 proxmox_password: 
 proxmox_ip: 
+proxmox_vmbr: vmbr0
+proxmox_kvm: yes
+proxmox_node: frhb65438ds
