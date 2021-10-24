@@ -1,2 +1,17 @@
 ---
 # tasks file for roles/aws_create
+
+- name: INSTANCE PROVISIONNING
+  ec2:
+    key_name: "{{ ssh_key }}"
+    instance_type: t2.micro
+    image: '{{ ami_id }}' #ubuntu 20.04
+    wait: true 
+    count: "{{ number_instance }}"
+    #assign_public_ip: yes
+    region: eu-west-2
+  register: ec2
+
+- name: Add all new instances in host groups.
+  add_host: hostname={{ item.public_ip }} groups=ec2hosts
+  loop: "{{ ec2.instances }}"

@@ -1,0 +1,8 @@
+---
+
+- hosts: localhost
+  gather_facts: False
+  roles:
+    - aws_create
+  vars_files: 
+   - var.yaml

@@ -1,0 +1,3 @@
+ssh_key: ido #name of your ssh key on your AWS Acc'
+ami_id: ami-0194c3e07668a7e36 #AMI ID(Ubuntu 20.04)
+number_instance: 3
