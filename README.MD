@@ -5,9 +5,17 @@ N'hesitez pas à faire des PR avec un max de commentaire dessus afin qu'on puiss
 
 
 
-# Comment lancer un playbook.
+# NOTE.
 
+##Lancer un playbook
 ansible-playbook -i inventory --ask-pass playbook.yml
+
+## Initier un rôle.
+
+```bash
+ansible-galaxy init  roles/nom_du_role
+```
+
 
 # Todo
 - Apache2
