@@ -8,7 +8,9 @@ N'hesitez pas à faire des PR avec un max de commentaire dessus afin qu'on puiss
 # NOTE.
 
 ##Lancer un playbook
+```bash
 ansible-playbook -i inventory --ask-pass playbook.yml
+```
 
 ## Initier un rôle.
 
